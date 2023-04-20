@@ -23,9 +23,9 @@ class Phone(Field):
             raise ValueError('Must be a interger')
         self.value = value
 
-class Record(Field):
-    
-    def __init__(self, name, phone):
+class Record:
+        
+    def __init__(self, name, phone=None):
         self.name = name
         self.phones = [phone] if phone else []
       
